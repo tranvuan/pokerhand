@@ -1,0 +1,14 @@
+$def with (todos)
+<ul>
+$for todo in todos:
+    <li id="t$todo.id">$todo.title</li>
+</ul>
+<center>
+<br>
+<h2>Poker hand</h2>
+<form method="post" action="calc">
+<p><input type="text" name="pot" style="height:28px;width:180px;"/> </p>
+<p><input type="text" name="hand" style="height:28px;width:180px;"/> </p>
+<p><input type="submit" value="Calc" style="height:36px;width:60px;"/> </p>
+</form>
+</center>
