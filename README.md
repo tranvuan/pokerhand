@@ -24,11 +24,13 @@
 The nginx virtual host file is in `nginx` folder
 
 3. Start & stop nginx: 
+
    $ sudo nginx
 
    $ sudo nginx -s stop
 
 4. Start & stop webpy with nginx and fastcgi:
+
    $ ./start.sh (please refer to start-template.sh)
 
    $ ./stop.sh (please refer to stop-template.sh)
