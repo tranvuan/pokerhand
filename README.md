@@ -8,32 +8,32 @@
 #### and visit http://pokerhand.com
 
 
-[1] You need to download and install:
+#####[1] You need to download and install:
 
 + webpy package: web.py-0.38.tar.gz
 
-$sudo python setup.py install
+    $sudo python setup.py install
     
 + flup package: flup-1.0.2.tar.gz
 
-$ sudo python setup.py install
+    $ sudo python setup.py install
 
 + spawn-fcgi: spawn-fcgi-1.6.4.tar.gz
 
-$ ./configure & make & sudo make install
+    $ ./configure & make & sudo make install
 
-[2] Then add nginx config to site-available, and ln -s to site-enabled
+#####[2] Then add nginx config to site-available, and ln -s to site-enabled
 
 The nginx virtual host file is in `nginx` folder
 
-[3] Start & stop nginx: 
+#####[3] Start & stop nginx: 
 
-   $ sudo nginx
+    $ sudo nginx
 
-   $ sudo nginx -s stop
+    $ sudo nginx -s stop
 
-[4] Start & stop webpy with nginx and fastcgi:
+#####[4] Start & stop webpy with nginx and fastcgi:
 
-   $ ./start.sh (please refer to start-template.sh)
+    $ ./start.sh (please refer to start-template.sh)
 
-   $ ./stop.sh (please refer to stop-template.sh)
+    $ ./stop.sh (please refer to stop-template.sh)
