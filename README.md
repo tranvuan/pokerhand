@@ -10,14 +10,14 @@
 
 1. You need to download and install:
 
-    web.py-0.38.tar.gz
-+ webpy package: sudo python setup.py install
++ webpy package: web.py-0.38.tar.gz
+$sudo python setup.py install
+    
++ flup package: flup-1.0.2.tar.gz
+$ sudo python setup.py install
 
-    flup-1.0.2.tar.gz
-+ flup package: sudo python setup.py install
-
-    spawn-fcgi-1.6.4.tar.gz
-+ spawn-fcgi: ./configure & make & sudo make install
++ spawn-fcgi: spawn-fcgi-1.6.4.tar.gz
+$ ./configure & make & sudo make install
 
 2. Then add nginx config to site-available, and ln -s to site-enabled
 
