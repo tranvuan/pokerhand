@@ -105,7 +105,6 @@ def getBestFromPotAndHandList(pot, handlist):
 
 
 render = web.template.render('templates/')
-#db = web.database(dbn='mysql', user='antran', pw='12345678', db='webpy')
 
 urls = (
   '/', 'index',
@@ -114,15 +113,12 @@ urls = (
 
 class index:
     def GET(self):
-        #todos = db.select('todo')
-        todos = []
-        return render.index(todos)
+        entries = []
+        return render.index(entries)
 
 class calc:
     def POST(self):
         i = web.input()
-        #n = db.insert('todo', title=i.title)
-        #raise web.seeother('/')
         potstr = i.pot
         handstr = i.hand
         my_pot = Pot(set(potstr.split()))
